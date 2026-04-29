@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="exemploJsInline.html">
+        <a href="atividade11.html" onclick="return confirmar()">Abrir Nova Páigina:</button>
+    </form>
+    <script>
+        
+         function confirmar(){
+            var pagina = document.getElementsByTagName('form')
+            return window.confirm("Deseja ir para outra pagina ")
+        }
+    </script> 
+</body>
+</html>
