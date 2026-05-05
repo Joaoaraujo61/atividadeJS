@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="nome">Digite seu nome:</label>
+    <input type="text" id="nome" name="nome"><br>
+    <label for="nome">Digite sua idade:</label>
+    <input type="text" id="idade" name="idade"><br>
+    <button id="mostrar" onclick="mostrar()">Mostrar</button><br>
+
+    <p id="resultado"></p>
+
+    <script>
+        function mostrar(){
+            const nome = document.getElementById("nome").value
+            const idade = document.getElementById("idade").value
+
+            document.getElementById("resultado").innerHTML = "Nome: "+nome+"<br>Idade: "+idade
+        }
+    </script>
+</body>
+</html>
